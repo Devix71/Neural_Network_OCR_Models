@@ -3,7 +3,7 @@
 The purpose of this experiment was to explore and evaluate various approaches and model architectures towards license plate number recognition. 
 
 At the first, a general text OCR pyTorch model is implemented and analyzed, namely Deepayan Das's "Adapting OCR with limited supervision" framework [Adapting-OCR](https://github.com/Deepayan137/Adapting-OCR). This way better insights into the principles behind unsupervised and semi-supervised OCR can be gathered. This model exhibits great performance in regards to its OCR capabilities, recognizing 97.97% of the characters and 86% of the sequence of characters used in its testing.
->**Note<sub>1</sub>**, the model used a synthetic dataset, where the text images were clearly visible and had uniform sizes, nowhere near the conditions of a real-life dataset, thus its performance is not accurate of a real world implementation.
+>**Note<sub>1</sub>:** the model used a synthetic dataset, where the text images were clearly visible and had uniform sizes, nowhere near the conditions of a real-life dataset, thus its performance is not accurate of a real world implementation.
 
 
 The second step was to integrate a real-world dataset into the model. The chosen dataset was Francesco Pettini's License Plate Characters dataset, available on [Kaggle](https://www.kaggle.com/datasets/francescopettini/license-plate-characters-detection-ocr). This way the model was exposed to images of license plates from various countries, not just general text.
